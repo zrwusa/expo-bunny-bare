@@ -11,19 +11,18 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1D8CB73012E74BFDAEE75084 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53D1E828B1B840E2A3332215 /* InfoPlist.strings */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		7B03A7E5393145B894E5EB21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1064D15C4C784E69985D6384 /* InfoPlist.strings */; };
+		810E9449800E40719D50A832 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4617A4BC2454264AF2244FD /* InfoPlist.strings */; };
+		896707012CDF43E4A92F7FA7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B838810E38E4A8E9F3A1961 /* InfoPlist.strings */; };
+		8C0F09BB22C9495488057855 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A43E67CF6F1C4C7F876FC661 /* InfoPlist.strings */; };
 		96905EF65AED1B983A6B3ABC /* libPods-exporeactbunny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-exporeactbunny.a */; };
-		9C193D6F272B472CBEDD51C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20B0A4D3F4DC47D28ACA314D /* InfoPlist.strings */; };
-		9C92F751AF784B3EBBD6BEBD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96A94FD8291D46858000CF08 /* GoogleService-Info.plist */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		FF6711B7E45F4A7FBA73DCFF /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948084D33C694634B0FB043D /* noop-file.swift */; };
+		BB53DB70264F344F00E0CDBC /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB53DB6F264F344F00E0CDBC /* noop-file.swift */; };
+		D2536ECB1FB3442EAABDF18F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 833B33BA1C664EF8A3125EB2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		1064D15C4C784E69985D6384 /* InfoPlist.strings */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "/Users/revone/projects/expo-react-bunny-bare/ios/exporeactbunny/Supporting/zh.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* exporeactbunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exporeactbunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = exporeactbunny/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = exporeactbunny/AppDelegate.m; sourceTree = "<group>"; };
@@ -31,16 +30,17 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = exporeactbunny/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = exporeactbunny/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = exporeactbunny/main.m; sourceTree = "<group>"; };
-		20B0A4D3F4DC47D28ACA314D /* InfoPlist.strings */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "/Users/revone/projects/expo-react-bunny-bare/ios/exporeactbunny/Supporting/en.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		53D1E828B1B840E2A3332215 /* InfoPlist.strings */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "/Users/revone/projects/expo-react-bunny-bare/ios/exporeactbunny/Supporting/he.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		4741BC7C30B44B93B8928D04 /* exporeactbunny-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "exporeactbunny-Bridging-Header.h"; path = "exporeactbunny/exporeactbunny-Bridging-Header.h"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-exporeactbunny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-exporeactbunny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B838810E38E4A8E9F3A1961 /* InfoPlist.strings */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "/Users/revone/projects/expo-react-bunny-bare/ios/exporeactbunny/Supporting/en.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-exporeactbunny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exporeactbunny.debug.xcconfig"; path = "Target Support Files/Pods-exporeactbunny/Pods-exporeactbunny.debug.xcconfig"; sourceTree = "<group>"; };
-		77A81CB86FF14620B344914D /* exporeactbunny-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "exporeactbunny-Bridging-Header.h"; path = "exporeactbunny/exporeactbunny-Bridging-Header.h"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-exporeactbunny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exporeactbunny.release.xcconfig"; path = "Target Support Files/Pods-exporeactbunny/Pods-exporeactbunny.release.xcconfig"; sourceTree = "<group>"; };
-		948084D33C694634B0FB043D /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "exporeactbunny/noop-file.swift"; sourceTree = "<group>"; };
-		96A94FD8291D46858000CF08 /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "exporeactbunny/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		833B33BA1C664EF8A3125EB2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "exporeactbunny/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A43E67CF6F1C4C7F876FC661 /* InfoPlist.strings */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "/Users/revone/projects/expo-react-bunny-bare/ios/exporeactbunny/Supporting/he.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A4617A4BC2454264AF2244FD /* InfoPlist.strings */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "/Users/revone/projects/expo-react-bunny-bare/ios/exporeactbunny/Supporting/zh.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = exporeactbunny/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		BB53DB6F264F344F00E0CDBC /* noop-file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "noop-file.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -69,9 +69,9 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				96A94FD8291D46858000CF08 /* GoogleService-Info.plist */,
-				77A81CB86FF14620B344914D /* exporeactbunny-Bridging-Header.h */,
-				948084D33C694634B0FB043D /* noop-file.swift */,
+				BB53DB6F264F344F00E0CDBC /* noop-file.swift */,
+				833B33BA1C664EF8A3125EB2 /* GoogleService-Info.plist */,
+				4741BC7C30B44B93B8928D04 /* exporeactbunny-Bridging-Header.h */,
 			);
 			name = exporeactbunny;
 			sourceTree = "<group>";
@@ -86,12 +86,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5736CAB8FE3D48B8A239665D /* en.lproj */ = {
+		770153CBE6984DEE80FEEF1A /* zh.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				20B0A4D3F4DC47D28ACA314D /* InfoPlist.strings */,
+				A4617A4BC2454264AF2244FD /* InfoPlist.strings */,
 			);
-			name = en.lproj;
+			name = zh.lproj;
 			path = "";
 			sourceTree = "<group>";
 		};
@@ -124,22 +124,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A0EB66F259034FB19C77F939 /* he.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				53D1E828B1B840E2A3332215 /* InfoPlist.strings */,
-			);
-			name = he.lproj;
-			path = "";
-			sourceTree = "<group>";
-		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
 				BB2F792C24A3F905000567C9 /* Expo.plist */,
-				5736CAB8FE3D48B8A239665D /* en.lproj */,
-				F375806483DD42EAA53D4C15 /* zh.lproj */,
-				A0EB66F259034FB19C77F939 /* he.lproj */,
+				E913D561A88D46C0B02C97B2 /* en.lproj */,
+				770153CBE6984DEE80FEEF1A /* zh.lproj */,
+				D82E97F8E9DD49CD9B0DF2C4 /* he.lproj */,
 			);
 			name = Supporting;
 			path = exporeactbunny/Supporting;
@@ -154,12 +145,21 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		F375806483DD42EAA53D4C15 /* zh.lproj */ = {
+		D82E97F8E9DD49CD9B0DF2C4 /* he.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				1064D15C4C784E69985D6384 /* InfoPlist.strings */,
+				A43E67CF6F1C4C7F876FC661 /* InfoPlist.strings */,
 			);
-			name = zh.lproj;
+			name = he.lproj;
+			path = "";
+			sourceTree = "<group>";
+		};
+		E913D561A88D46C0B02C97B2 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				6B838810E38E4A8E9F3A1961 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
 			path = "";
 			sourceTree = "<group>";
 		};
@@ -196,7 +196,7 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -227,10 +227,10 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				9C193D6F272B472CBEDD51C3 /* InfoPlist.strings in Resources */,
-				7B03A7E5393145B894E5EB21 /* InfoPlist.strings in Resources */,
-				1D8CB73012E74BFDAEE75084 /* InfoPlist.strings in Resources */,
-				9C92F751AF784B3EBBD6BEBD /* GoogleService-Info.plist in Resources */,
+				896707012CDF43E4A92F7FA7 /* InfoPlist.strings in Resources */,
+				810E9449800E40719D50A832 /* InfoPlist.strings in Resources */,
+				8C0F09BB22C9495488057855 /* InfoPlist.strings in Resources */,
+				D2536ECB1FB3442EAABDF18F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,9 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB53DB70264F344F00E0CDBC /* noop-file.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				FF6711B7E45F4A7FBA73DCFF /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +433,7 @@
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -480,11 +481,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
-					"\"$(inherited)\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -494,6 +491,7 @@
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -534,11 +532,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
-					"\"$(inherited)\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

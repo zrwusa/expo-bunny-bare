@@ -79,7 +79,6 @@ So, it can turn out to be a million-dollar mistake. When I switched to TypeScrip
 
 
 
-
 # Preview
 
 ## Online Simples

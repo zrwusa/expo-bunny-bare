@@ -3,6 +3,8 @@ import {ImageSourcePropType, ImageURISource} from "react-native";
 import {AVPlaybackSource} from "../../packages/expo-av/src/AV";
 import {SagaTodo} from "./states";
 import {IMessage} from "../../packages/react-native-gifted-chat/src";
+import firebase from "firebase";
+import {StoredUser} from "./auth";
 
 export type DemoEmployee = {
     _id: number,
@@ -77,9 +79,8 @@ export interface UserProfile {
 export type IMMessageType = 'MESSAGE' | 'IMAGE' | 'STICKER_GIF' | 'AUDIO' | 'VIDEO' | ''
 
 export interface IMMessage extends IMessage {
-    roomKey: string,
+    conversationId: string,
     type: IMMessageType,
-    sticker?: string
 }
 
 export interface ChatRoom {
@@ -93,14 +94,10 @@ export interface UserPhoto extends ImageURISource {
 // create schema for the DB
 export interface SchemaRealtimeDB {
     todoList: SagaTodo,
-    // demoNearbyFilms: NearbyFilm,
     // region: Region,
-    socialMediaVideos: SocialMediaMainDatum,
-    socialMediaImages: SocialMediaImageDatum,
-    chatRooms: ChatRoom,
-    chatMessages: IMMessage,
-    usersWithPhotos: { [key: string]: UserPhoto[] },
-
+    // chatRooms: ChatRoom,
+    // chatMessages: IMMessage,
+    // usersWithPhotos: { [key: string]: UserPhoto[] },
     // [name: string]: any
 }
 
@@ -109,7 +106,38 @@ export interface DemoFirestore {
     keywords: string
 }
 
+export interface Conversation {
+    _id: string,
+    avatar: string,
+    name: string,
+    creatorId: string,
+    users: string[],
+    channelId: string,
+    createdAt: number,
+    updatedAt: number,
+    deletedAt?: number
+}
+
+
+export interface UserContact {
+    contactId: string,
+    firstName: string,
+    lastName: string,
+    createdAt: number,
+    updatedAt: number
+}
+
 export interface SchemaFirestore {
     demoFirestore: DemoFirestore,
+    chatMessages: IMMessage,
+    currentUserConversationsMessages: IMMessage,
+    conversations: Conversation,
+    storedUsers: StoredUser,
+    storedUser: StoredUser,
+    userContacts: UserContact,
+    demoNearbyFilms: NearbyFilm,
+    socialMediaVideos: SocialMediaMainDatum,
+    socialMediaImages: SocialMediaImageDatum,
+    users: firebase.UserInfo,
     usersWithPhotos: { [key: string]: { [key: string]: ImageURISource } }
 }

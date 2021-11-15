@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {Image, ImageProps, ImageStyle, StyleProp, StyleSheet, Text, View, ViewStyle,} from 'react-native'
-// TODO: support web
 import {IMessage} from './Models'
 import LightBox from "../../react-native-lightbox";
 
@@ -68,7 +67,6 @@ export default class MessageImage<TMessage extends IMessage = IMessage> extends 
             isDebug,
             messages,
         } = this.props
-        console.log(messages)
         return (
             <View style={[styles.container, containerStyle]}>
                 <LightBox

@@ -10,7 +10,8 @@
     "apiNeedLogin": "需要登录",
     "loginSuccess": "登录成功",
     "LogOutSuccess": "已退出登录",
-    "canceledRequest": "请求已取消"
+    "canceledRequest": "请求已取消",
+    "loadingData": "数据加载中..."
   },
   "dictionary": {
     "BTC": "比特币",
@@ -41,6 +42,7 @@
       "componentsAndThemes": "组件&主题",
       "devTools": "开发工具",
       "others": "其他",
+      "apps": "Apps",
       "system": "系统",
       "profile": "我的",
       "demoModal": "模态框",

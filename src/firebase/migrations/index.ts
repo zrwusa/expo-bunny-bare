@@ -1,5 +1,6 @@
 export * from "./nearbyFilm"
 export * from "./socialMediaImage"
 export * from "./socialMediaVideo"
-export * from "./chatRoom"
 export * from "./chatMessage"
+export * from "./conversation"
+export * from "./user"

@@ -25,11 +25,24 @@ export type FacebookUser = {
     name: string
 }
 
+export interface StoredUser extends firebase.UserInfo {
+    firstName: string,
+    lastName: string,
+    middleName: string,
+    isActive: boolean,
+    isReported: boolean,
+    isBlocked: boolean,
+    preferences: string,
+    createdAt: number,
+    updatedAt: number
+}
+
 export type User = {
     firebaseUser?: FirebaseUser,
     bunnyUser?: BunnyUser,
     googleUser?: GoogleUser,
-    facebookUser?: FacebookUser
+    facebookUser?: FacebookUser,
+    storedUser?: StoredUser
 }
 
 export type AccessToken = string | null;
@@ -56,13 +69,13 @@ export type PersistenceAuthInfo = {
 export type AuthLaborContextTypePartial = Partial<AuthLaborContextType>
 export type AuthFunctions = {
     bunnyLogin: (params: LoginParams) => Promise<BLResult>,
-    googleLogin: (isFirebase: boolean) => Promise<BLResult>,
-    facebookLogin: (isFirebase: boolean) => Promise<BLResult>,
+    googleLogin: (isFirebase: boolean, isStoreUser: boolean) => Promise<BLResult>,
+    facebookLogin: (isFirebase: boolean, isStoreUser: boolean) => Promise<BLResult>,
     firebaseSendOTP: (phoneInfoOptions: firebase.auth.PhoneInfoOptions | string,
                       applicationVerifier: firebase.auth.ApplicationVerifier) => Promise<BLResult>,
-    firebaseConfirmOTP: (verificationId: string, verificationCode: string) => Promise<BLResult>,
-    firebaseEmailLogin: (email: string, password: string) => Promise<BLResult>,
-    firebaseEmailSignUp: (email: string, password: string) => Promise<BLResult>,
+    firebaseConfirmOTP: (verificationId: string, verificationCode: string, isStoreUser: boolean) => Promise<BLResult>,
+    firebaseEmailLogin: (email: string, password: string, isStoreUser: boolean) => Promise<BLResult>,
+    firebaseEmailSignUp: (email: string, password: string, isStoreUser: boolean) => Promise<BLResult>,
     firebaseResetPassword: (email: string) => Promise<BLResult>,
     dummyLogin: () => Promise<BLResult>,
     logOut: (triggerType?: TriggerType) => Promise<BLResult>,

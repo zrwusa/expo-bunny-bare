@@ -1,35 +1,47 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Text, TextButton, View} from "../../components/UI";
 import {LinearGradientIcon} from "../../components/LinearGradientIcon";
 import {useThemeLabor} from "../../providers/theme-labor";
-import {FlatList, Image, TouchableHighlight, TouchableOpacity, Vibration} from "react-native";
+import {FlatList, Platform, TouchableHighlight, TouchableOpacity, Vibration} from "react-native";
+import {CachedImage as Image} from "../../components/CachedImage";
 import {getStyles} from "./styles";
 import {useSizeLabor} from "../../providers/size-labor";
-import {
-    migrateChatMessages,
-    migrateChatRooms,
-    migrateNearbyFilms,
-    migrateSocialMediaImages,
-    migrateSocialMediaVideos
-} from "../../firebase/migrations";
 import {useFirestoreConnect} from "react-redux-firebase";
 import {useSelector} from "react-redux";
 import {RootState} from "../../types";
 import {DraggableView} from "../../containers/DraggableView";
 import {uuidV4} from "../../utils";
-import {Picker} from '@react-native-picker/picker';
+import {
+    migrateChatMessages,
+    migrateConversations,
+    migrateNearbyFilms,
+    migrateSocialMediaImages,
+    migrateSocialMediaVideos,
+    migrateUsers
+} from "../../firebase/migrations";
+import {ProgressBar} from "react-native-paper";
+import CacheManager from "../../components/CachedImage/CacheManager";
 
 
 export function PlaygroundScreen() {
     const sizeLabor = useSizeLabor();
     const themeLabor = useThemeLabor();
-    const styles = getStyles(sizeLabor, themeLabor)
+    const styles = getStyles(sizeLabor, themeLabor);
+    const [progress, setProgress] = useState(0);
     const handleMigrate = async () => {
+        setProgress(0);
+        await migrateUsers();
+        setProgress(0.1);
         await migrateNearbyFilms();
+        setProgress(0.2);
         await migrateSocialMediaVideos();
+        setProgress(0.3);
         await migrateSocialMediaImages();
-        await migrateChatRooms();
+        setProgress(0.4);
         await migrateChatMessages();
+        setProgress(0.6);
+        await migrateConversations()
+        setProgress(1);
     }
 
     useFirestoreConnect([
@@ -41,14 +53,26 @@ export function PlaygroundScreen() {
     for (let i = 0; i < 1000; i++) {
         testData.push({id: uuidV4()})
     }
+
+    useEffect(() => {
+        if(Platform.OS!=='web'){
+            console.log('clear cache')
+            CacheManager.clearCache()
+        }
+
+    },[])
     return (
         <View style={{flex: 1}}>
+            <View>
+                <View style={{width: 100, height: 100, backgroundColor: 'blue', flexDirection: 'row'}}/>
+            </View>
             <View style={styles.container}>
                 <LinearGradientIcon name="leaf" colors={['#fff', '#0f0']} size={40}/>
             </View>
             <TextButton onPress={handleMigrate}>
                 <Text>migrate</Text>
             </TextButton>
+            <ProgressBar progress={progress}/>
 
             <View>
                 {
@@ -88,7 +112,10 @@ export function PlaygroundScreen() {
             <FlatList data={testData}
                       keyExtractor={item => item.id}
                       renderItem={() => <Image style={{width: 300, height: 300}}
-                                               source={{uri: 'https://raw.githubusercontent.com/zrwusa/assets/master/images/pexels-5451714-medium.jpg'}}/>}/>
+                                               preview={{uri:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=='}}
+                                               uri={'https://raw.githubusercontent.com/zrwusa/assets/master/images/pexels-5451714-medium.jpg'}/>
+                      }
+            />
         </View>
     )
 }

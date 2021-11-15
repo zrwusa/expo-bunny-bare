@@ -7,7 +7,8 @@ export interface PreparingProps {
 }
 
 export const Preparing = (props: PreparingProps) => {
-    const {text} = props;
+    const {text = ''} = props;
+
     const styles = getStyles();
     return (
         <View style={styles.container}>
